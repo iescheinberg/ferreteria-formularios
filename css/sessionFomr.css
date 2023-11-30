@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Roboto&display=swap');
+
+/*Variables de fuentes y paleta de colores*/
+:root {
+    --color-primario: #c4e04a;
+    --color-base: #efe66b;
+    --color-detalles: #191507;
+    --color-celeste: #817870;
+    --color-marron: #f3eae8;
+    --fuente-titulos: 'Roboto', sans-serif;
+    --fuente-texto: 'Hind Madurai', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: var(--fuente-texto)
+}
+
+/*//////////////*/
+/*NAVBAR*/
+/*//////////////*/
+.header {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 0.8em;
+    height: 80px;
+    /* width: 100%; */
+
+}
+
+.header .logo img {
+    cursor: pointer;
+    height: 70px;
+    width: auto;
+
+}
+
+.header .logo {
+    transition: all 0.3s;
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0.2em 1em;
+    transition: all 0.3s;
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+}
+
+.menu a {
+    font-size: 1.2em;
+    font-family: var(--fuente-titulos);
+    text-decoration: none;
+    color: var(--color-detalles);
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+.search input {
+    border-radius: 10px;
+    padding: 0.1em 0.5em;
+    font-family: var(--fuente-titulos);
+    border-style: none;
+    margin: 0.5em;
+    width: 250px;
+    height: 25px;
+    position: relative;
+}
+
+.bi {
+    position: absolute;
+    right: 300px;
+    top: 32px;
+    color: #817870;
+}
+
+.search input:focus {
+    border-color: var(--color-primario);
+    /* NO me lo toma */
+    background-color: var(--color-base);
+}
+
+.search button {
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+    font-family: var(--fuente-titulos);
+    border-radius: 10px;
+    background-color: var(--color-base);
+    border: 1px solid var(--color-celeste);
+    color: var(--color-detalles);
+    transition: all 0.3s;
+}
+
+.search button:hover {
+    transform: scale(1.1);
+    background-color: var(--color-detalles);
+    color: var(--color-primario);
+}
+
+.buy-car {
+    margin: 0.5em 3em;
+    transition: all 0.3s;
+}
+
+.buy-car img {
+    width: 25px;
+}
+
+.buy-car:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.buy-car-responsive {
+    display: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+/* CONTAINER */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FORMULARIO DE INICIO DE SESIÓN */
+.container {
+    padding: 2em;
+    background-color: #c4e04a77;
+    ;
+}
+
+.session-title {
+    font-size: 2em;
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
+
+.session-form {
+    font-family: var(--fuente-texto);
+
+}
+
+.session-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.session-form label {
+    display: block;
+    font-size: 1.5em;
+    padding-top: 1.5em;
+}
+
+.session-form input {
+    border-radius: 5px;
+    border: 1px solid var(--color-celeste);
+}
+
+.session-name {
+    grid-column: 1;
+    grid-row: 1/2;
+}
+
+.session-name input {
+    width: 100%;
+    height: 2em;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.session-password {
+    grid-column: 1;
+    grid-row: 2/3;
+}
+
+.session-password input {
+    width: 100%;
+    height: 2em;
+    padding: 5px;
+    font-size: 1.1em;
+
+}
+
+.forgot-password {
+    grid-column: 1;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 2em;
+}
+
+.form-button {
+    grid-column: 1/3;
+    text-align: center;
+    padding: 5px;
+}
+
+.form-button button {
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+    font-family: var(--fuente-titulos);
+    border-radius: 10px;
+    background-color: var(--color-base);
+    border: 1px solid var(--color-celeste);
+    color: var(--color-detalles);
+    transition: all 0.3s;
+}
+
+.form-button button:hover {
+    transform: scale(1.1);
+    background-color: var(--color-detalles);
+    color: var(--color-primario);
+    cursor: pointer;
+}
